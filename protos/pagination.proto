@@ -5,9 +5,9 @@ package simple_mongo_grpc;
 option go_package = "simple_mongo_grpc/pb/pagination";
 
 message Pagination {
-    uint64 total = 1;
-    uint32 per_page = 2;
-    uint32 current_page = 3;
-    uint32 last_page = 4;
+    uint32 current_page = 1;
+    uint32 limit = 2;
+    uint32 total_record = 3;
+    uint32 total_page = 4;
 }
 
